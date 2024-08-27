@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VRMemories", "VRMemories.csproj", "{8E18234B-89C7-4669-A4EF-51AAC86FB30B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E18234B-89C7-4669-A4EF-51AAC86FB30B}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{8E18234B-89C7-4669-A4EF-51AAC86FB30B}.Debug|x64.ActiveCfg = Debug|x64
+		{8E18234B-89C7-4669-A4EF-51AAC86FB30B}.Debug|x64.Build.0 = Debug|x64
+		{8E18234B-89C7-4669-A4EF-51AAC86FB30B}.Release|Any CPU.ActiveCfg = Release|x64
+		{8E18234B-89C7-4669-A4EF-51AAC86FB30B}.Release|x64.ActiveCfg = Release|x64
+		{8E18234B-89C7-4669-A4EF-51AAC86FB30B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {107BC80F-07FD-48A4-9676-B624CC765C33}
+	EndGlobalSection
+EndGlobal
