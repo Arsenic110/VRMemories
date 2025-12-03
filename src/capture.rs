@@ -1,10 +1,12 @@
-use std::time::Instant;
 use windows_capture::{
-    capture::{Context, GraphicsCaptureApiHandler},
-    encoder::{ImageEncoder, VideoEncoder}, frame::ImageFormat, settings::ColorFormat,
+    capture::{Context, GraphicsCaptureApiHandler}, 
+    frame::ImageFormat,
     graphics_capture_api::InternalCaptureControl,
     frame::Frame
 };
+
+use std::fs;
+use std::path::Path;
 
 pub struct Capture {
     savepath: String
@@ -26,11 +28,11 @@ impl GraphicsCaptureApiHandler for Capture {
             now.format("%Y-%m")
         );
 
-        let savefolder = savefolder.as_str();
+        let path = Path::new(&savefolder);
 
-        match std::fs::create_dir_all(savefolder) {
-            Ok(_) => println!("Save directory didn't exist. It now does!"),
-            Err(_) => {}
+        if !path.exists() {
+            fs::create_dir_all(&path)?;
+            println!("Save directory didn't exist. It now does!");
         }
 
         let filename = format!("{}/{}.png", 

@@ -39,6 +39,9 @@ fn main() {
             savepath.clone()
         );
 
+        //start capturing
         Capture::start(settings).expect("Capture Failed");
+        //once capture fails, returns to this thread.
+        //the loop will ensure more attempts to find the window and try again
     }
 }
