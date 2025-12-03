@@ -1,0 +1,11 @@
+[package]
+name = "vrmemories"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = "0.4.42"
+directories = "6.0.0"
+image = "0.25.9"
+sysinfo = "0.37.2"
+windows-capture = "1.5.0"
