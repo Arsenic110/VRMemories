@@ -11,11 +11,14 @@ mod capture;
 use capture::Capture;
 
 fn main() {
-    let target_title = "GitHub Desktop";
-    let capture_interval = Duration::from_secs(60);
+    let target_title = "VRChat";
+    let capture_interval = Duration::from_secs(30);
 
     let dirs = directories::UserDirs::new().unwrap();
-    let savepath = format!("{}/VRMemories", dirs.picture_dir().unwrap().display());
+    //let savepath = format!("{}/VRMemories", dirs.picture_dir().unwrap().display());
+    let savepath = "E:/AllStuff/Pictures/VRMemories".to_string();
+
+    println!("Photos will be saved in: {}", savepath);
 
     loop {
         //attempt to find window
